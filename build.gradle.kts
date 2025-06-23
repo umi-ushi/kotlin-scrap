@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.0"
+    application
 }
 
 group = "wa.umiushi"
@@ -13,6 +14,9 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+application {
+    mainClass = "wa.umiushi.AppKt"
+}
 tasks.test {
     useJUnitPlatform()
 }
